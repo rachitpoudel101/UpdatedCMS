@@ -52,24 +52,26 @@ public class Login {
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(0, 255, 0));
 		frame.getContentPane().add(panel, BorderLayout.NORTH);
-		JLabel lblNewLabel = new JLabel("Welcome to Course Management System");
+		JLabel lblNewLabel = new JLabel("Course Management System");
 		lblNewLabel.setForeground(new Color(0, 0, 0));
 		lblNewLabel.setAlignmentX(0.5f);
 		
 		lblNewLabel.setFont(new Font("Poppins", Font.BOLD, 25));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
-				gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_panel.createSequentialGroup()
-								.addGap(165)
-								.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 556, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap(115, Short.MAX_VALUE)));
+			gl_panel.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
+					.addContainerGap(243, Short.MAX_VALUE)
+					.addComponent(lblNewLabel)
+					.addGap(256))
+		);
 		gl_panel.setVerticalGroup(
-				gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_panel.createSequentialGroup()
-								.addContainerGap()
-								.addComponent(lblNewLabel)
-								.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+			gl_panel.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(lblNewLabel)
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+		);
 		panel.setLayout(gl_panel);
 
 		JPanel panel_1 = new JPanel();

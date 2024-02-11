@@ -152,6 +152,7 @@ public class Dashboard {
 		dashboard.add(lblNewLabel_2_2_5);
 		
 		JScrollPane scrollPane_4 = new JScrollPane();
+		scrollPane_4.setEnabled(false);
 		scrollPane_4.setBounds(330, 428, 324, 178);
 		dashboard.add(scrollPane_4);
 		

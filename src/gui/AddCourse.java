@@ -59,13 +59,16 @@ public class AddCourse {
 		frame.getContentPane().add(panel_1, BorderLayout.CENTER);
 		
 		textField = new JTextField();
+		textField.setBounds(173, 36, 96, 20);
 		textField.setFont(new Font("Poppins", Font.PLAIN, 10));
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Course Name");
+		lblNewLabel_1.setBounds(173, 16, 96, 14);
 		lblNewLabel_1.setFont(new Font("Poppins", Font.PLAIN, 10));
 		
 		JButton btnNewButton = new JButton("Add Course");
+		btnNewButton.setBounds(173, 117, 96, 23);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CRUDCourse c = new CRUDCourse();
@@ -77,30 +80,11 @@ public class AddCourse {
 				}
 			}
 		});
+		panel_1.setLayout(null);
 		btnNewButton.setBackground(new Color(117, 191, 64));
 		btnNewButton.setFont(new Font("Poppins", Font.PLAIN, 10));
-		GroupLayout gl_panel_1 = new GroupLayout(panel_1);
-		gl_panel_1.setHorizontalGroup(
-			gl_panel_1.createParallelGroup(Alignment.LEADING)
-				.addGroup(Alignment.TRAILING, gl_panel_1.createSequentialGroup()
-					.addContainerGap(173, Short.MAX_VALUE)
-					.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING, false)
-						.addComponent(btnNewButton, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblNewLabel_1, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(textField, Alignment.LEADING))
-					.addGap(167))
-		);
-		gl_panel_1.setVerticalGroup(
-			gl_panel_1.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_panel_1.createSequentialGroup()
-					.addGap(16)
-					.addComponent(lblNewLabel_1)
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addGap(61)
-					.addComponent(btnNewButton)
-					.addContainerGap(91, Short.MAX_VALUE))
-		);
-		panel_1.setLayout(gl_panel_1);
+		panel_1.add(btnNewButton);
+		panel_1.add(lblNewLabel_1);
+		panel_1.add(textField);
 	}
 }
